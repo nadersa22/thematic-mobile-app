@@ -38,12 +38,11 @@ export const Session = {
   },
 };
 
-const CURRENT_AUTH_TOKEN = 'c95e90bcda5c440f2c364fe7f3370a43';
+
 
 
 export async function initDefaultSession() {
 
-  await Session.setAuthToken(CURRENT_AUTH_TOKEN);
 
   const teamId = await Session.getTeamId();
   if (!teamId) {
